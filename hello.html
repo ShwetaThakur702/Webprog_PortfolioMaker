@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Maker</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <header>
+        <h1>Portfolio Maker</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#templates">Templates</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="template-slider">
+        <h2>Select a Portfolio Template</h2>
+        <div class="slider-container">
+            <button class="prev">&#10094;</button>
+            <div class="slider">
+                <div class="slide" onclick="selectTemplate('template1')">
+                    <img src="template1.png" alt="Template 1">
+                    <p>Modern Template</p>
+                </div>
+                <div class="slide" onclick="selectTemplate('template2')">
+                    <img src="template2.png" alt="Template 2">
+                    <p>Professional Template</p>
+                </div>
+                <div class="slide" onclick="selectTemplate('template3')">
+                    <img src="template3.png" alt="Template 3">
+                    <p>Creative Template</p>
+                </div>
+            </div>
+            <button class="next">&#10095;</button>
+        </div>
+    </section>
+
+    <!-- Let's Get Started Button -->
+    <section class="start-section">
+        <button class="start-btn" onclick="redirectToForm()">Let's Get Started</button>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Portfolio Maker. All Rights Reserved.</p>
+    </footer>
+
+    <script>
+        function redirectToForm() {
+            window.location.href = "form.html";
+        }
+    </script>
+</body>
+</html>
+

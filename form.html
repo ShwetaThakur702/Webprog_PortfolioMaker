@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Your Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="templates.html">Templates</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="form-section">
+        <h1>Fill in Your Portfolio Details</h1>
+        <p>Enter your details to generate your personalized portfolio.</p>
+
+        <form id="portfolioForm">
+            <div class="form-group">
+                <label for="name">Full Name:</label>
+                <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+            </div>
+
+            <div class="form-group">
+                <label for="title">Professional Title:</label>
+                <input type="text" id="title" name="title" placeholder="e.g., Software Developer, Data Scientist" required>
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email Address:</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email" required>
+            </div>
+
+            <div class="form-group">
+                <label for="phone">Phone Number:</label>
+                <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" required>
+            </div>
+
+            <div class="form-group">
+                <label for="linkedin">LinkedIn Profile:</label>
+                <input type="url" id="linkedin" name="linkedin" placeholder="Enter LinkedIn URL">
+            </div>
+
+            <div class="form-group">
+                <label for="github">GitHub Profile:</label>
+                <input type="url" id="github" name="github" placeholder="Enter GitHub URL">
+            </div>
+
+            <div class="form-group">
+                <label for="website">Personal Website:</label>
+                <input type="url" id="website" name="website" placeholder="Enter your website URL (if any)">
+            </div>
+
+            <div class="form-group">
+                <label for="education">Education:</label>
+                <textarea id="education" name="education" placeholder="List your degrees and institutions" required></textarea>
+            </div>
+
+            <div class="form-group">
+                <label for="skills">Skills:</label>
+                <input type="text" id="skills" name="skills" placeholder="e.g., Python, Java, Web Development" required>
+            </div>
+
+            <div class="form-group">
+                <label for="experience">Work Experience:</label>
+                <textarea id="experience" name="experience" placeholder="Describe your professional experience" required></textarea>
+            </div>
+
+            <div class="form-group">
+                <label for="projects">Projects:</label>
+                <textarea id="projects" name="projects" placeholder="List key projects you have worked on" required></textarea>
+            </div>
+
+            <div class="form-group">
+                <label for="achievements">Certifications & Achievements:</label>
+                <textarea id="achievements" name="achievements" placeholder="Mention certifications, awards, etc."></textarea>
+            </div>
+
+            <div class="form-group">
+                <label for="bio">Short Bio:</label>
+                <textarea id="bio" name="bio" placeholder="Write a brief introduction about yourself" required></textarea>
+            </div>
+
+            <div class="form-group">
+                <label for="photo">Upload Your Profile Picture:</label>
+                <input type="file" id="photo" name="photo" accept="image/*">
+            </div>
+
+            <button type="submit" id= "Submit" class="btn">Generate Portfolio</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 CareerCanvas. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
